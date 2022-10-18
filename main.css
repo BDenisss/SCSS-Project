@@ -21,7 +21,7 @@ body {
   grid-area: nav;
   width: 100%;
   top: 0;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(#ffeedd, #ffe5d9);
   box-shadow: 2px 5px 20px #6e6e6e;
 }
@@ -29,6 +29,7 @@ body {
   top: 0;
   position: sticky;
   height: 100vh;
+  margin-top: 10px;
 }
 .container .navbar ul img {
   width: 200px;
@@ -45,6 +46,22 @@ body {
   list-style: none;
   text-decoration: none;
   color: #252422;
+}
+.container .home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/2.webp");
+}
+.container .home .card {
+  text-align: center;
+  font-size: 50px;
+  color: #ffe5d9;
+  background-color: rgba(0, 0, 0, 0.6588235294);
+  border-radius: 1em;
+  padding: 0 20px 0;
 }
 
 /*# sourceMappingURL=main.css.map */
