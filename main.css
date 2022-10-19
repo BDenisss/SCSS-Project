@@ -1,26 +1,27 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: adorn-condensed-sans, sans-serif;
   font-weight: 400;
   font-style: normal;
+  background-color: #f8edeb;
 }
 
-.container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-}
-.container .navbar {
+.navbar {
   width: 100%;
   top: 0;
   height: 150px;
   position: fixed;
+  background-color: #f8edeb;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
 }
-.container .navbar ul {
+.navbar ul {
   position: sticky;
   height: 150px;
   display: flex;
@@ -28,37 +29,69 @@ body {
   justify-content: center;
   align-items: center;
 }
-.container .navbar ul img {
+.navbar ul img {
   width: 160px;
   height: fit-content;
   object-fit: cover;
-  margin: 0 20px;
+  margin-left: 1vw;
+  margin-right: 10vw;
+  margin-top: 25px;
+  padding: 0 20px 0;
 }
-.container .navbar ul li {
+.navbar ul li {
   padding: 20px;
   cursor: pointer;
   font-size: 20px;
   height: fit-content;
   list-style: none;
 }
-.container .navbar ul li a {
+.navbar ul li a {
   list-style: none;
   text-decoration: none;
   color: #000000;
 }
-.container .content {
+
+.header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+.header .header-banner {
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
-.container .content .home {
-  text-align: center;
-  font-size: 32px;
-  color: #000000;
-  border-radius: 1em;
+.header .header-banner .header-banner-content {
   padding: 0 20px 0;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.header .header-banner .header-banner-content .header-title {
+  text-align: center;
+  font-size: 28px;
+  color: #000000;
+}
+.header .header-banner .header-banner-content img {
+  width: 400px;
+  object-fit: cover;
+  border-radius: 1em;
+  border: 1px solid #000;
+  padding: 8px;
+}
+
+.about {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
 }
 
 /*# sourceMappingURL=main.css.map */
