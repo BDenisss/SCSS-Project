@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: adorn-condensed-sans,sans-serif;
     font-weight: 400;
@@ -102,6 +106,15 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.monument {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 50px 0;
 }
 
