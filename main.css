@@ -70,33 +70,49 @@ body {
   flex-wrap: wrap;
 }
 .header .header-banner .header-banner-content {
-  padding: 0 20px 0;
+  padding: 20px 20px;
+  margin: 0 20px;
   gap: 80px;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row-reverse;
+  background: linear-gradient(#f5ebe0, #ffd6ff);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1em;
 }
 .header .header-banner .header-banner-content .header-title {
+  display: flex;
   text-align: center;
-  font-size: 28px;
+  font-size: 1vw;
   color: #000000;
+  flex-direction: column;
 }
 .header .header-banner .header-banner-content img {
-  width: 400px;
+  width: 30vw;
   object-fit: cover;
   border-radius: 1em;
-  filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+  filter: drop-shadow(0 4px 0.5rem rgb(0, 0, 0));
+}
+
+.c_about {
+  height: 100vh;
+  padding: 50px 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about {
-  height: 100vh;
   display: flex;
+  gap: 80px;
+  padding: 50px;
   justify-content: center;
   align-items: center;
-  padding: 50px 4em;
-  gap: 80px;
+  background: linear-gradient(#f5ebe0, #ffd6ff);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1em;
 }
 .about img {
   width: 50vw;
@@ -126,8 +142,14 @@ body {
 }
 
 @media screen and (max-width: 1205px) {
-  .header {
-    flex-direction: column;
+  .header .header-banner .header-banner-content {
+    gap: 50px;
+  }
+  .header .header-banner .header-banner-content .header-title {
+    font-size: 12px;
+  }
+  .header .header-banner .header-banner-content img {
+    width: 300px;
   }
   .about {
     flex-direction: column;
@@ -137,6 +159,12 @@ body {
   }
   .title {
     font-size: 13px;
+  }
+  .navbar {
+    height: 100px;
+  }
+  .navbar ul {
+    height: 100px;
   }
 }
 
