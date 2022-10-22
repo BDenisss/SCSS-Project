@@ -112,15 +112,15 @@ body {
   flex-wrap: wrap;
 }
 .header .header-banner .header-banner-content {
-  padding: 20px 20px;
+  padding: 30px;
   margin: 0 20px;
-  gap: 80px;
+  gap: 50px;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
-  background: #f5ebe0;
+  background: #f8edeb;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 1em;
 }
@@ -214,6 +214,25 @@ body {
   justify-content: center;
   align-items: center;
   padding: 50px 4em;
+  flex-direction: column;
+}
+.gallerie .gal-container {
+  height: 100vh;
+}
+.gallerie .image-gallerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  max-width: 1600px;
+  width: 80%;
+  height: 100vh;
+  margin: 20px auto;
+  justify-content: center;
+  grid-gap: 10px;
+}
+.gallerie .image-gallerie img {
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 1205px) {
@@ -255,6 +274,9 @@ body {
   }
   .monument h1 {
     font-size: 28px;
+  }
+  .gallerie {
+    margin-top: 20%;
   }
 }
 @media screen and (max-width: 700px) {
